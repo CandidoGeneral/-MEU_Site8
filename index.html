@@ -1006,136 +1006,91 @@
         <!-- T5-CSS - PROJETO UNIFICADO -->
         <div id="t5-css" style="display:none;">
             <section class="boas-vindas">
-                <h2>🚀 Projeto Unificado</h2>
-                <p>Todos os conceitos de HTML e CSS aplicados em uma única página!</p>
-            </section>
-
-            <section class="trimestres">
-                <article class="card">
-                    <h3>1º Trimestre (Agora com CSS)</h3>
-                    <div class="multimedia" style="flex-direction: column;">
-                        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=300" alt="HTML" style="width: 100%;">
-                        <p><strong>T1:</strong> HTML estruturado</p>
-                        <p><strong>T2:</strong> Elementos multimédia</p>
-                        <p><strong>T3:</strong> Tabelas organizadas</p>
-                        <p><strong>T4:</strong> Formulários estilizados</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h3>2º Trimestre - CSS</h3>
-                    <ul>
-                        <li><span style="color: #667eea;">✓</span> Seletores</li>
-                        <li><span style="color: #667eea;">✓</span> Cores e fontes</li>
-                        <li><span style="color: #667eea;">✓</span> Fundos e bordas</li>
-                        <li><span style="color: #667eea;">✓</span> Box Model</li>
-                        <li><span style="color: #667eea;">✓</span> Flexbox</li>
-                        <li><span style="color: #667eea;">✓</span> Pseudo-classes (:hover)</li>
-                    </ul>
-                </article>
+                <h2>🚀 Projeto Unificado - CSS</h2>
+                <p>Integração de todos os conceitos CSS estudados num projeto completo.</p>
             </section>
         </div>
 
         <!-- T1-JS - SISTEMA DE AVALIAÇÃO -->
-        <div id="t1-js" style="display:none;">
-            <div class="sistema-avaliacao">
-                <div class="container">
-                    <div class="header">
-                        <h1>📋 Sistema de Avaliação - TLP</h1>
-                        <p>IMCL | Informática de Gestão | Turma ANI - 12° Classe</p>
-                    </div>
+        <div id="t1-js" style="display:none; background: #f0f7ff; padding: 20px; border-radius: 10px;">
+            <div class="container">
+                <div class="header">
+                    <h1>📋 Sistema de Avaliação - TLP</h1>
+                    <p>IMCL | Informática de Gestão | Turma ANI - 12° Classe</p>
+                </div>
 
-                    <!-- FORMULÁRIO DE CADASTRO -->
-                    <div class="form-card">
-                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">📝 Novo Aluno</h3>
-                        <div class="form-grid" id="formGrid">
-                            <div class="input-group"><label>Escola</label><input type="text" id="escola" value="IMCL" placeholder="Escola"></div>
-                            <div class="input-group"><label>Curso</label><input type="text" id="curso" value="Informática De Gestão" placeholder="Curso"></div>
-                            <div class="input-group"><label>Nome completo</label><input type="text" id="nome" placeholder="Ex: Cândido Alfredo"></div>
-                            <div class="input-group"><label>Nº do Aluno</label><input type="text" id="numero" placeholder="Número"></div>
-                            <div class="input-group"><label>Nº do BI</label><input type="text" id="bi" placeholder="BI"></div>
-                            <div class="input-group"><label>Telefone</label><input type="tel" id="telefone" placeholder="+244 9xx xxx xxx"></div>
-                            <div class="input-group"><label>E-mail</label><input type="email" id="email" placeholder="exemplo@mail.com"></div>
-                            <div class="input-group"><label>Turma</label><input type="text" id="turma" value="ANI" placeholder="Turma"></div>
-                            <div class="input-group"><label>Turno</label><input type="text" id="turno" value="Noite" placeholder="Turno"></div>
-                            <div class="input-group"><label>Classe</label><input type="text" id="classe" value="12°" placeholder="Classe"></div>
-                            <div class="input-group"><label>Disciplina</label><input type="text" id="disciplina" value="TLP" placeholder="Disciplina"></div>
-                            <div class="input-group"><label>Nota MAC (0-20)</label><input type="number" id="notaMac" step="0.1" min="0" max="20" value="14"></div>
-                            <div class="input-group"><label>Nota Prova Professor</label><input type="number" id="notaProf" step="0.1" min="0" max="20" value="12"></div>
-                            <div class="input-group"><label>Nota Prova Escola</label><input type="number" id="notaEscola" step="0.1" min="0" max="20" value="13"></div>
-                        </div>
-                        <div class="double-btns">
-                            <button type="button" class="btn-secondary" id="limparFormBtn">🧹 Limpar campos</button>
-                            <button type="button" id="adicionarBtn">➕ Adicionar Aluno à Tabela</button>
-                        </div>
+                <!-- FORMULÁRIO DE CADASTRO -->
+                <div class="form-card">
+                    <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">📝 Novo Aluno</h3>
+                    <div class="form-grid" id="formGrid">
+                        <div class="input-group"><label>Escola</label><input type="text" id="escola" value="IMCL" placeholder="Escola"></div>
+                        <div class="input-group"><label>Curso</label><input type="text" id="curso" value="Informática De Gestão" placeholder="Curso"></div>
+                        <div class="input-group"><label>Nome completo</label><input type="text" id="nome" placeholder="Ex: Cândido Alfredo"></div>
+                        <div class="input-group"><label>Nº do Aluno</label><input type="text" id="numero" placeholder="Número"></div>
+                        <div class="input-group"><label>Nº do BI</label><input type="text" id="bi" placeholder="BI"></div>
+                        <div class="input-group"><label>Telefone</label><input type="tel" id="telefone" placeholder="+244 9xx xxx xxx"></div>
+                        <div class="input-group"><label>E-mail</label><input type="email" id="email" placeholder="exemplo@mail.com"></div>
+                        <div class="input-group"><label>Turma</label><input type="text" id="turma" value="ANI" placeholder="Turma"></div>
+                        <div class="input-group"><label>Turno</label><input type="text" id="turno" value="Noite" placeholder="Turno"></div>
+                        <div class="input-group"><label>Classe</label><input type="text" id="classe" value="12°" placeholder="Classe"></div>
+                        <div class="input-group"><label>Disciplina</label><input type="text" id="disciplina" value="TLP" placeholder="Disciplina"></div>
+                        <div class="input-group"><label>Nota MAC (0-20)</label><input type="number" id="notaMac" step="0.1" min="0" max="20" value="14"></div>
+                        <div class="input-group"><label>Nota Prova Professor</label><input type="number" id="notaProf" step="0.1" min="0" max="20" value="12"></div>
+                        <div class="input-group"><label>Nota Prova Escola</label><input type="number" id="notaEscola" step="0.1" min="0" max="20" value="13"></div>
                     </div>
+                    <div class="double-btns">
+                        <button type="button" class="btn-secondary" id="limparFormBtn">🧹 Limpar campos</button>
+                        <button type="button" id="adicionarBtn">➕ Adicionar Aluno à Tabela</button>
+                    </div>
+                </div>
 
-                    <!-- TABELA COM TODOS OS DADOS -->
-                    <div class="table-wrapper">
-                        <table id="tabelaAlunos">
-                            <thead>
-                                <tr>
-                                    <th>Escola</th><th>Curso</th><th>Nome</th><th>Nº</th><th>BI</th><th>Telefone</th><th>Email</th>
-                                    <th>Turma</th><th>Turno</th><th>Classe</th><th>Disciplina</th>
-                                    <th>MAC</th><th>Prova Prof</th><th>Prova Escola</th><th>Média</th><th>Condição</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tabelaBody">
-                                <!-- linhas inseridas via JS (alunos iniciais + novos) -->
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="footer">
-                        💡 Condição: Média ≥ 12 → <strong>Apto</strong> | Média entre 10 e 11.9 → <strong>Recurso</strong> | Média < 10 → <strong>N/Apto</strong>
-                    </div>
+                <!-- TABELA COM TODOS OS DADOS -->
+                <div class="table-wrapper">
+                    <table id="tabelaAlunos">
+                        <thead>
+                            <tr>
+                                <th>Escola</th><th>Curso</th><th>Nome</th><th>Nº</th><th>BI</th><th>Telefone</th><th>Email</th>
+                                <th>Turma</th><th>Turno</th><th>Classe</th><th>Disciplina</th>
+                                <th>MAC</th><th>Prova Prof</th><th>Prova Escola</th><th>Média</th><th>Condição</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaBody">
+                            <!-- linhas inseridas via JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer">
+                    💡 Condição: Média ≥ 12 → <strong>Apto</strong> | Média entre 10 e 11.9 → <strong>Recurso</strong> | Média < 10 → <strong>N/Apto</strong>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Instituto Médio Comercial de Luanda</p>
-        <p>Curso: Informática de Gestão | Disciplina: TLP | 12ª Classe</p>
-        <p style="margin-top: 10px; font-size: 0.9em;">Todas as tarefas do I, II e III Trimestre implementadas</p>
+        <p>&copy; 2025 Instituto Médio Comercial de Luanda - TLP 12ª Classe</p>
     </footer>
 
     <script>
-        // ========== FUNÇÕES PRINCIPAIS DO SITE ==========
+        // ===== FUNÇÃO PRINCIPAL: MOSTRAR CONTEÚDO =====
         function mostrarConteudo(id) {
-            // Esconder todos os conteúdos
-            const conteudos = document.querySelectorAll('#conteudo-principal > div');
-            conteudos.forEach(div => {
-                div.style.display = 'none';
-            });
+            // Ocultar todos os conteúdos
+            const todosConteudos = document.querySelectorAll('main > div');
+            todosConteudos.forEach(el => el.style.display = 'none');
             
             // Mostrar o conteúdo selecionado
-            const conteudoSelecionado = document.getElementById(id);
-            if (conteudoSelecionado) {
-                conteudoSelecionado.style.display = 'block';
+            const conteudo = document.getElementById(id);
+            if (conteudo) {
+                conteudo.style.display = 'block';
             }
             
-            // Atualizar classe active no menu
-            const links = document.querySelectorAll('.menu-principal a');
-            links.forEach(link => {
+            // Atualizar menu ativo
+            document.querySelectorAll('.menu-principal a').forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('onclick') && link.getAttribute('onclick').includes(id)) {
-                    link.classList.add('active');
-                }
             });
-
-            // Se for o T1 do JS, reiniciar os dados
-            if (id === 't1-js') {
-                carregarAlunosIniciais();
-            }
+            event.target.classList.add('active');
         }
 
-        // Mostrar página inicial ao carregar
-        window.onload = function() {
-            mostrarConteudo('inicio');
-        };
-
-        // ========== LÓGICA DO SISTEMA DE AVALIAÇÃO ==========
-        // Calcular média e condição
+        // ===== LÓGICA DE MÉDIA E CONDIÇÃO =====
         function calcularMedia(notaMAC, notaProf, notaEscola) {
             return (notaMAC + notaProf + notaEscola) / 3;
         }
@@ -1156,7 +1111,7 @@
             return "napto";
         }
 
-        // Adicionar linha na tabela
+        // Função para adicionar linha na tabela
         function adicionarLinhaTabela(aluno) {
             const tbody = document.getElementById("tabelaBody");
             const media = aluno.media;
@@ -1165,7 +1120,6 @@
             const badgeClass = classeCondicao(condicao);
 
             const novaLinha = document.createElement("tr");
-
             novaLinha.innerHTML = `
                 <td>${escapeHtml(aluno.escola)}</td>
                 <td>${escapeHtml(aluno.curso)}</td>
@@ -1187,7 +1141,7 @@
             tbody.appendChild(novaLinha);
         }
 
-        // Anti-XSS
+        // Função anti-XSS
         function escapeHtml(str) {
             if (!str) return "";
             return str.replace(/[&<>]/g, function(m) {
@@ -1195,8 +1149,6 @@
                 if (m === '<') return '&lt;';
                 if (m === '>') return '&gt;';
                 return m;
-            }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
-                return c;
             });
         }
 
@@ -1219,8 +1171,8 @@
             let notaEscola = parseFloat(document.getElementById("notaEscola").value);
 
             // Validações
-            if (!nome || !numero || !bi || !telefone || !email || !turma || !disciplina) {
-                alert("❌ Por favor, preencha todos os campos obrigatórios: Nome, Nº, BI, Telefone, Email, Turma e Disciplina.");
+            if (!nome || !numero || !bi || !telefone || !email) {
+                alert("❌ Por favor, preencha todos os campos obrigatórios: Nome, Nº, BI, Telefone, Email.");
                 return null;
             }
             if (isNaN(notaMac) || isNaN(notaProf) || isNaN(notaEscola)) {
@@ -1260,14 +1212,15 @@
             document.getElementById("turno").value = "Noite";
             document.getElementById("classe").value = "12°";
             document.getElementById("disciplina").value = "TLP";
-            document.getElementById("notaMac").value = "10";
-            document.getElementById("notaProf").value = "10";
-            document.getElementById("notaEscola").value = "10";
+            document.getElementById("notaMac").value = "14";
+            document.getElementById("notaProf").value = "12";
+            document.getElementById("notaEscola").value = "13";
             document.getElementById("escola").value = "IMCL";
             document.getElementById("curso").value = "Informática De Gestão";
+            document.getElementById("nome").focus();
         }
 
-        // Adicionar do formulário
+        // Adicionar aluno do formulário
         function adicionarDoFormulario() {
             const alunoData = coletarDadosFormulario();
             if (alunoData) {
@@ -1285,7 +1238,7 @@
             }
         }
 
-        // Alunos iniciais
+        // Dados iniciais
         const alunosIniciais = [
             {
                 escola: "IMCL", curso: "Informática De Gestão", nome: "Cândido General Alfredo",
@@ -1322,33 +1275,29 @@
         // Carregar alunos iniciais
         function carregarAlunosIniciais() {
             const tbody = document.getElementById("tabelaBody");
-            if (tbody) {
-                tbody.innerHTML = "";
-                for (let aluno of alunosIniciais) {
-                    const media = calcularMedia(aluno.notaMAC, aluno.notaProf, aluno.notaEscola);
-                    const condicao = obterCondicao(media);
-                    const alunoCompleto = {
-                        ...aluno,
-                        media: media,
-                        condicao: condicao
-                    };
-                    adicionarLinhaTabela(alunoCompleto);
-                }
+            if (!tbody) return;
+            tbody.innerHTML = "";
+            for (let aluno of alunosIniciais) {
+                const media = calcularMedia(aluno.notaMAC, aluno.notaProf, aluno.notaEscola);
+                const condicao = obterCondicao(media);
+                const alunoCompleto = {
+                    ...aluno,
+                    media: media,
+                    condicao: condicao
+                };
+                adicionarLinhaTabela(alunoCompleto);
             }
         }
 
-        // Eventos do sistema de avaliação
+        // Inicialização
         document.addEventListener("DOMContentLoaded", () => {
+            carregarAlunosIniciais();
+
             const addBtn = document.getElementById("adicionarBtn");
             const limparBtn = document.getElementById("limparFormBtn");
 
-            if (addBtn) {
-                addBtn.addEventListener("click", adicionarDoFormulario);
-            }
-            
-            if (limparBtn) {
-                limparBtn.addEventListener("click", limparFormulario);
-            }
+            if (addBtn) addBtn.addEventListener("click", adicionarDoFormulario);
+            if (limparBtn) limparBtn.addEventListener("click", limparFormulario);
 
             const camposForm = document.querySelectorAll("#formGrid input");
             camposForm.forEach(campo => {
