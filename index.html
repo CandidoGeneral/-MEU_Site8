@@ -591,30 +591,30 @@
         
         <nav class="menu-principal">
             <ul>
-                <li><a href="#" class="active" onclick="mostrarConteudo('inicio')">Início</a></li>
+                <li><a href="#" class="active" onclick="mostrarConteudo(event, 'inicio')">Início</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">1º Trimestre</a>
                     <div class="dropdown-content">
-                        <a href="#" onclick="mostrarConteudo('t1')">T1 - Introdução ao HTML</a>
-                        <a href="#" onclick="mostrarConteudo('t2')">T2 - Multimédia</a>
-                        <a href="#" onclick="mostrarConteudo('t3')">T3 - Tabelas</a>
-                        <a href="#" onclick="mostrarConteudo('t4')">T4 - Formulários</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't1')">T1 - Introdução ao HTML</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't2')">T2 - Multimédia</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't3')">T3 - Tabelas</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't4')">T4 - Formulários</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">2º Trimestre</a>
                     <div class="dropdown-content">
-                        <a href="#" onclick="mostrarConteudo('t1-css')">T1 - Introdução ao CSS</a>
-                        <a href="#" onclick="mostrarConteudo('t2-css')">T2 - Seletores e Texto</a>
-                        <a href="#" onclick="mostrarConteudo('t3-css')">T3 - Fundos e Bordas</a>
-                        <a href="#" onclick="mostrarConteudo('t4-css')">T4 - Box Model</a>
-                        <a href="#" onclick="mostrarConteudo('t5-css')">T5 - Projeto Unificado</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't1-css')">T1 - Introdução ao CSS</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't2-css')">T2 - Seletores e Texto</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't3-css')">T3 - Fundos e Bordas</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't4-css')">T4 - Box Model</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't5-css')">T5 - Projeto Unificado</a>
                     </div>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">3º Trimestre</a>
                     <div class="dropdown-content">
-                        <a href="#" onclick="mostrarConteudo('t1-js')">T1 - Sistema de Avaliação</a>
+                        <a href="#" onclick="mostrarConteudo(event, 't1-js')">T1 - Sistema de Avaliação</a>
                     </div>
                 </li>
             </ul>
@@ -1006,309 +1006,189 @@
         <!-- T5-CSS - PROJETO UNIFICADO -->
         <div id="t5-css" style="display:none;">
             <section class="boas-vindas">
-                <h2>🚀 Projeto Unificado - CSS</h2>
-                <p>Integração de todos os conceitos CSS estudados num projeto completo.</p>
+                <h2>🚀 Projeto Unificado - Aprendizado Prático</h2>
+                <p>Este trimestre consolida todo o aprendizado de CSS através de um projeto prático que integra todos os conceitos.</p>
+                
+                <div class="trimestres">
+                    <article class="card">
+                        <h3>Objetivo</h3>
+                        <p>Desenvolver um projeto web completo utilizando HTML e CSS, aplicando todos os conceitos aprendidos nos trimestres anteriores.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Requisitos</h3>
+                        <ul>
+                            <li>✓ Estrutura HTML semântica</li>
+                            <li>✓ Design responsivo</li>
+                            <li>✓ Paleta de cores coerente</li>
+                            <li>✓ Tipografia adequada</li>
+                        </ul>
+                    </article>
+                </div>
             </section>
         </div>
 
         <!-- T1-JS - SISTEMA DE AVALIAÇÃO -->
-        <div id="t1-js" style="display:none; background: #f0f7ff; padding: 20px; border-radius: 10px;">
-            <div class="container">
-                <div class="header">
-                    <h1>📋 Sistema de Avaliação - TLP</h1>
-                    <p>IMCL | Informática de Gestão | Turma ANI - 12° Classe</p>
-                </div>
-
-                <!-- FORMULÁRIO DE CADASTRO -->
-                <div class="form-card">
-                    <h3 style="margin-top: 0; display: flex; align-items: center; gap: 8px;">📝 Novo Aluno</h3>
-                    <div class="form-grid" id="formGrid">
-                        <div class="input-group"><label>Escola</label><input type="text" id="escola" value="IMCL" placeholder="Escola"></div>
-                        <div class="input-group"><label>Curso</label><input type="text" id="curso" value="Informática De Gestão" placeholder="Curso"></div>
-                        <div class="input-group"><label>Nome completo</label><input type="text" id="nome" placeholder="Ex: Cândido Alfredo"></div>
-                        <div class="input-group"><label>Nº do Aluno</label><input type="text" id="numero" placeholder="Número"></div>
-                        <div class="input-group"><label>Nº do BI</label><input type="text" id="bi" placeholder="BI"></div>
-                        <div class="input-group"><label>Telefone</label><input type="tel" id="telefone" placeholder="+244 9xx xxx xxx"></div>
-                        <div class="input-group"><label>E-mail</label><input type="email" id="email" placeholder="exemplo@mail.com"></div>
-                        <div class="input-group"><label>Turma</label><input type="text" id="turma" value="ANI" placeholder="Turma"></div>
-                        <div class="input-group"><label>Turno</label><input type="text" id="turno" value="Noite" placeholder="Turno"></div>
-                        <div class="input-group"><label>Classe</label><input type="text" id="classe" value="12°" placeholder="Classe"></div>
-                        <div class="input-group"><label>Disciplina</label><input type="text" id="disciplina" value="TLP" placeholder="Disciplina"></div>
-                        <div class="input-group"><label>Nota MAC (0-20)</label><input type="number" id="notaMac" step="0.1" min="0" max="20" value="14"></div>
-                        <div class="input-group"><label>Nota Prova Professor</label><input type="number" id="notaProf" step="0.1" min="0" max="20" value="12"></div>
-                        <div class="input-group"><label>Nota Prova Escola</label><input type="number" id="notaEscola" step="0.1" min="0" max="20" value="13"></div>
+        <div id="t1-js" style="display:none;">
+            <div class="sistema-avaliacao">
+                <div class="container">
+                    <div class="header">
+                        <h1>📊 Sistema de Avaliação de Alunos</h1>
+                        <p>Registre as notas e dados dos alunos para gerar avaliação automática</p>
                     </div>
-                    <div class="double-btns">
-                        <button type="button" class="btn-secondary" id="limparFormBtn">🧹 Limpar campos</button>
-                        <button type="button" id="adicionarBtn">➕ Adicionar Aluno à Tabela</button>
-                    </div>
-                </div>
 
-                <!-- TABELA COM TODOS OS DADOS -->
-                <div class="table-wrapper">
-                    <table id="tabelaAlunos">
-                        <thead>
-                            <tr>
-                                <th>Escola</th><th>Curso</th><th>Nome</th><th>Nº</th><th>BI</th><th>Telefone</th><th>Email</th>
-                                <th>Turma</th><th>Turno</th><th>Classe</th><th>Disciplina</th>
-                                <th>MAC</th><th>Prova Prof</th><th>Prova Escola</th><th>Média</th><th>Condição</th>
-                            </tr>
-                        </thead>
-                        <tbody id="tabelaBody">
-                            <!-- linhas inseridas via JS -->
-                        </tbody>
-                    </table>
-                </div>
-                <div class="footer">
-                    💡 Condição: Média ≥ 12 → <strong>Apto</strong> | Média entre 10 e 11.9 → <strong>Recurso</strong> | Média < 10 → <strong>N/Apto</strong>
+                    <div class="form-card">
+                        <h3 style="color: #1e3c72; margin-bottom: 20px;">Preencha todos os campos do formulário</h3>
+                        <form id="avaliacaoForm" onsubmit="procesarAvaliacao(event)">
+                            <div class="form-grid">
+                                <div class="input-group">
+                                    <label for="aluno_nome">Nome do Aluno:</label>
+                                    <input type="text" id="aluno_nome" name="aluno_nome" placeholder="Ex: João Silva" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="aluno_classe">Classe:</label>
+                                    <input type="text" id="aluno_classe" name="aluno_classe" placeholder="Ex: 12ª IG" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="aluno_numero">Nº de Aluno:</label>
+                                    <input type="text" id="aluno_numero" name="aluno_numero" placeholder="Ex: 001" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="primeiro_periodo">1ª Avaliação:</label>
+                                    <input type="number" id="primeiro_periodo" name="primeiro_periodo" min="0" max="20" placeholder="0-20" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="segundo_periodo">2ª Avaliação:</label>
+                                    <input type="number" id="segundo_periodo" name="segundo_periodo" min="0" max="20" placeholder="0-20" required>
+                                </div>
+                                <div class="input-group">
+                                    <label for="terceiro_periodo">3ª Avaliação:</label>
+                                    <input type="number" id="terceiro_periodo" name="terceiro_periodo" min="0" max="20" placeholder="0-20" required>
+                                </div>
+                            </div>
+
+                            <div class="double-btns">
+                                <button type="reset" class="btn-secondary">Limpar</button>
+                                <button type="submit">Processar Avaliação</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="resultado" style="display:none;">
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Classe</th>
+                                        <th>Nº</th>
+                                        <th>1ª Avaliação</th>
+                                        <th>2ª Avaliação</th>
+                                        <th>3ª Avaliação</th>
+                                        <th>Média</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabelaResultado">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="footer">
+                            <p>Legenda: <span class="badge apto">APTO</span> <span class="badge napto">NÃO APTO</span> <span class="badge recurso">RECURSO</span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Instituto Médio Comercial de Luanda - TLP 12ª Classe</p>
+        <p>&copy; 2025 Instituto Médio Comercial de Luanda - Técnicas de Linguagens de Programação</p>
     </footer>
 
     <script>
-        // ===== FUNÇÃO PRINCIPAL: MOSTRAR CONTEÚDO =====
-        function mostrarConteudo(id) {
+        // Função para mostrar conteúdo das seções
+        function mostrarConteudo(event, id) {
+            event.preventDefault();
+            
             // Ocultar todos os conteúdos
-            const todosConteudos = document.querySelectorAll('main > div');
-            todosConteudos.forEach(el => el.style.display = 'none');
-            
-            // Mostrar o conteúdo selecionado
-            const conteudo = document.getElementById(id);
-            if (conteudo) {
-                conteudo.style.display = 'block';
+            const conteudos = document.querySelectorAll('main > div');
+            conteudos.forEach(conteudo => {
+                conteudo.style.display = 'none';
+            });
+
+            // Mostrar conteúdo selecionado
+            const conteudoSelecionado = document.getElementById(id);
+            if (conteudoSelecionado) {
+                conteudoSelecionado.style.display = 'block';
             }
-            
+
             // Atualizar menu ativo
-            document.querySelectorAll('.menu-principal a').forEach(link => {
+            const links = document.querySelectorAll('.menu-principal a');
+            links.forEach(link => {
                 link.classList.remove('active');
             });
             event.target.classList.add('active');
         }
 
-        // ===== LÓGICA DE MÉDIA E CONDIÇÃO =====
-        function calcularMedia(notaMAC, notaProf, notaEscola) {
-            return (notaMAC + notaProf + notaEscola) / 3;
-        }
+        // Função para processar a avaliação
+        function procesarAvaliacao(event) {
+            event.preventDefault();
 
-        function obterCondicao(media) {
-            if (media >= 12) return "Apto";
-            if (media >= 10 && media < 12) return "Recurso";
-            return "N/Apto";
-        }
+            // Obter valores do formulário
+            const nome = document.getElementById('aluno_nome').value;
+            const classe = document.getElementById('aluno_classe').value;
+            const numero = document.getElementById('aluno_numero').value;
+            const nota1 = parseFloat(document.getElementById('primeiro_periodo').value);
+            const nota2 = parseFloat(document.getElementById('segundo_periodo').value);
+            const nota3 = parseFloat(document.getElementById('terceiro_periodo').value);
 
-        function formatMedia(media) {
-            return media.toFixed(1);
-        }
+            // Validar se todos os campos foram preenchidos
+            if (!nome || !classe || !numero || isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+                alert('Por favor, preencha todos os campos!');
+                return;
+            }
 
-        function classeCondicao(condicao) {
-            if (condicao === "Apto") return "apto";
-            if (condicao === "Recurso") return "recurso";
-            return "napto";
-        }
+            // Calcular média
+            const media = (nota1 + nota2 + nota3) / 3;
 
-        // Função para adicionar linha na tabela
-        function adicionarLinhaTabela(aluno) {
-            const tbody = document.getElementById("tabelaBody");
-            const media = aluno.media;
-            const condicao = aluno.condicao;
-            const mediaFormatada = formatMedia(media);
-            const badgeClass = classeCondicao(condicao);
+            // Determinar status
+            let status = '';
+            let badgeClass = '';
+            if (media >= 12) {
+                status = 'APTO';
+                badgeClass = 'apto';
+            } else if (media >= 10) {
+                status = 'RECURSO';
+                badgeClass = 'recurso';
+            } else {
+                status = 'NÃO APTO';
+                badgeClass = 'napto';
+            }
 
-            const novaLinha = document.createElement("tr");
-            novaLinha.innerHTML = `
-                <td>${escapeHtml(aluno.escola)}</td>
-                <td>${escapeHtml(aluno.curso)}</td>
-                <td>${escapeHtml(aluno.nome)}</td>
-                <td>${escapeHtml(aluno.numero)}</td>
-                <td>${escapeHtml(aluno.bi)}</td>
-                <td>${escapeHtml(aluno.telefone)}</td>
-                <td>${escapeHtml(aluno.email)}</td>
-                <td>${escapeHtml(aluno.turma)}</td>
-                <td>${escapeHtml(aluno.turno)}</td>
-                <td>${escapeHtml(aluno.classe)}</td>
-                <td>${escapeHtml(aluno.disciplina)}</td>
-                <td>${aluno.notaMAC}</td>
-                <td>${aluno.notaProf}</td>
-                <td>${aluno.notaEscola}</td>
-                <td><strong>${mediaFormatada}</strong></td>
-                <td><span class="badge ${badgeClass}">${condicao}</span></td>
+            // Criar linha da tabela
+            const linha = `
+                <tr>
+                    <td>${nome}</td>
+                    <td>${classe}</td>
+                    <td>${numero}</td>
+                    <td>${nota1.toFixed(2)}</td>
+                    <td>${nota2.toFixed(2)}</td>
+                    <td>${nota3.toFixed(2)}</td>
+                    <td><strong>${media.toFixed(2)}</strong></td>
+                    <td><span class="badge ${badgeClass}">${status}</span></td>
+                </tr>
             `;
-            tbody.appendChild(novaLinha);
+
+            // Adicionar à tabela
+            const tabelaResultado = document.getElementById('tabelaResultado');
+            tabelaResultado.innerHTML += linha;
+
+            // Mostrar resultado
+            document.getElementById('resultado').style.display = 'block';
+
+            // Limpar formulário
+            document.getElementById('avaliacaoForm').reset();
         }
-
-        // Função anti-XSS
-        function escapeHtml(str) {
-            if (!str) return "";
-            return str.replace(/[&<>]/g, function(m) {
-                if (m === '&') return '&amp;';
-                if (m === '<') return '&lt;';
-                if (m === '>') return '&gt;';
-                return m;
-            });
-        }
-
-        // Coletar dados do formulário
-        function coletarDadosFormulario() {
-            const escola = document.getElementById("escola").value.trim();
-            const curso = document.getElementById("curso").value.trim();
-            const nome = document.getElementById("nome").value.trim();
-            const numero = document.getElementById("numero").value.trim();
-            const bi = document.getElementById("bi").value.trim();
-            const telefone = document.getElementById("telefone").value.trim();
-            const email = document.getElementById("email").value.trim();
-            const turma = document.getElementById("turma").value.trim();
-            const turno = document.getElementById("turno").value.trim();
-            const classe = document.getElementById("classe").value.trim();
-            const disciplina = document.getElementById("disciplina").value.trim();
-            
-            let notaMac = parseFloat(document.getElementById("notaMac").value);
-            let notaProf = parseFloat(document.getElementById("notaProf").value);
-            let notaEscola = parseFloat(document.getElementById("notaEscola").value);
-
-            // Validações
-            if (!nome || !numero || !bi || !telefone || !email) {
-                alert("❌ Por favor, preencha todos os campos obrigatórios: Nome, Nº, BI, Telefone, Email.");
-                return null;
-            }
-            if (isNaN(notaMac) || isNaN(notaProf) || isNaN(notaEscola)) {
-                alert("⚠️ As notas devem ser números válidos.");
-                return null;
-            }
-            if (notaMac < 0 || notaMac > 20 || notaProf < 0 || notaProf > 20 || notaEscola < 0 || notaEscola > 20) {
-                alert("📏 As notas devem estar entre 0 e 20.");
-                return null;
-            }
-
-            notaMac = Math.round(notaMac * 10) / 10;
-            notaProf = Math.round(notaProf * 10) / 10;
-            notaEscola = Math.round(notaEscola * 10) / 10;
-
-            const media = calcularMedia(notaMac, notaProf, notaEscola);
-            const condicao = obterCondicao(media);
-
-            return {
-                escola: escola || "IMCL",
-                curso: curso || "Informática De Gestão",
-                nome, numero, bi, telefone, email, turma, turno: turno || "Noite",
-                classe: classe || "12°", disciplina: disciplina || "TLP",
-                notaMAC: notaMac, notaProf: notaProf, notaEscola: notaEscola,
-                media: media, condicao: condicao
-            };
-        }
-
-        // Limpar formulário
-        function limparFormulario() {
-            document.getElementById("nome").value = "";
-            document.getElementById("numero").value = "";
-            document.getElementById("bi").value = "";
-            document.getElementById("telefone").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("turma").value = "ANI";
-            document.getElementById("turno").value = "Noite";
-            document.getElementById("classe").value = "12°";
-            document.getElementById("disciplina").value = "TLP";
-            document.getElementById("notaMac").value = "14";
-            document.getElementById("notaProf").value = "12";
-            document.getElementById("notaEscola").value = "13";
-            document.getElementById("escola").value = "IMCL";
-            document.getElementById("curso").value = "Informática De Gestão";
-            document.getElementById("nome").focus();
-        }
-
-        // Adicionar aluno do formulário
-        function adicionarDoFormulario() {
-            const alunoData = coletarDadosFormulario();
-            if (alunoData) {
-                adicionarLinhaTabela(alunoData);
-                document.querySelector(".table-wrapper").scrollIntoView({ behavior: "smooth", block: "nearest" });
-                document.getElementById("nome").value = "";
-                document.getElementById("numero").value = "";
-                document.getElementById("bi").value = "";
-                document.getElementById("telefone").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("notaMac").value = "10";
-                document.getElementById("notaProf").value = "10";
-                document.getElementById("notaEscola").value = "10";
-                document.getElementById("nome").focus();
-            }
-        }
-
-        // Dados iniciais
-        const alunosIniciais = [
-            {
-                escola: "IMCL", curso: "Informática De Gestão", nome: "Cândido General Alfredo",
-                numero: "08", bi: "020491615LA054", telefone: "926222594", email: "candidoalfredo128@gmail.com",
-                turma: "ANI", turno: "Noite", classe: "12°", disciplina: "TLP",
-                notaMAC: 14, notaProf: 12, notaEscola: 13
-            },
-            {
-                escola: "IMCL", curso: "Informática De Gestão", nome: "Maria Luísa Silva",
-                numero: "10", bi: "123456789LA001", telefone: "911111111", email: "maria.silva@estudante.imcl.ao",
-                turma: "ANI", turno: "Noite", classe: "12°", disciplina: "TLP",
-                notaMAC: 10, notaProf: 11, notaEscola: 9
-            },
-            {
-                escola: "IMCL", curso: "Informática De Gestão", nome: "João Manuel C. Ferreira",
-                numero: "15", bi: "789012345LA002", telefone: "922222222", email: "joao.ferreira@imcl.ao",
-                turma: "ANI", turno: "Noite", classe: "12°", disciplina: "TLP",
-                notaMAC: 8, notaProf: 7, notaEscola: 6
-            },
-            {
-                escola: "IMCL", curso: "Informática De Gestão", nome: "Ana Paula Monteiro",
-                numero: "22", bi: "345678901LA003", telefone: "933333333", email: "ana.monteiro@estudante.ao",
-                turma: "ANI", turno: "Noite", classe: "12°", disciplina: "TLP",
-                notaMAC: 15, notaProf: 16, notaEscola: 17
-            },
-            {
-                escola: "IMCL", curso: "Informática De Gestão", nome: "Carlos Eduardo Mendes",
-                numero: "30", bi: "456789123LA004", telefone: "944444444", email: "carlos.mendes@imcl.ao",
-                turma: "ANI", turno: "Noite", classe: "12°", disciplina: "TLP",
-                notaMAC: 13, notaProf: 12, notaEscola: 14
-            }
-        ];
-
-        // Carregar alunos iniciais
-        function carregarAlunosIniciais() {
-            const tbody = document.getElementById("tabelaBody");
-            if (!tbody) return;
-            tbody.innerHTML = "";
-            for (let aluno of alunosIniciais) {
-                const media = calcularMedia(aluno.notaMAC, aluno.notaProf, aluno.notaEscola);
-                const condicao = obterCondicao(media);
-                const alunoCompleto = {
-                    ...aluno,
-                    media: media,
-                    condicao: condicao
-                };
-                adicionarLinhaTabela(alunoCompleto);
-            }
-        }
-
-        // Inicialização
-        document.addEventListener("DOMContentLoaded", () => {
-            carregarAlunosIniciais();
-
-            const addBtn = document.getElementById("adicionarBtn");
-            const limparBtn = document.getElementById("limparFormBtn");
-
-            if (addBtn) addBtn.addEventListener("click", adicionarDoFormulario);
-            if (limparBtn) limparBtn.addEventListener("click", limparFormulario);
-
-            const camposForm = document.querySelectorAll("#formGrid input");
-            camposForm.forEach(campo => {
-                campo.addEventListener("keypress", (e) => {
-                    if (e.key === "Enter") {
-                        e.preventDefault();
-                        adicionarDoFormulario();
-                    }
-                });
-            });
-        });
     </script>
 </body>
 </html>
